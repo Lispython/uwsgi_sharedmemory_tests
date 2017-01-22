@@ -1,0 +1,26 @@
+version: "2.0"
+
+services:
+  dev_flask_app:
+    image: dev_flask_app:latest
+    build:
+      dockerfile: Dockerfile
+      context: .
+    environment:
+      - PYTHONUNBUFFERED=1
+
+    command:
+      - "find /usr/src/app/ -name '*.pyc' -exec rm -f {} +  && cd /uwsgi_lib && python /uwsgi_lib/uwsgiconfig.py --build && cd /usr/src/app/ && /uwsgi_lib/uwsgi --ini=/usr/src/app/uwsgi.ini"
+    volumes:
+      - ./uwsgi.ini:/usr/src/app/uwsgi.ini
+      - ./:/usr/src/app/
+      - /projects/libs/uwsgi:/uwsgi_lib
+
+    ports:
+      - 8051:8051
+
+    networks:
+      - default
+
+networks:
+  default:

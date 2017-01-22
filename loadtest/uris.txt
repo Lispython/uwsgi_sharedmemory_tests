@@ -1,0 +1,46 @@
+[Connection: close]
+[Host: dev_flask_app]
+[Cookie: None]
+
+/
+/api/v2/mobile/personalized/
+/api/v2/personalized/
+/api/v2/recommendations/
+/business/
+/auto/
+/starlife/
+/moscow_city/
+/politics/
+/sport/
+/kids/
+/lifestyle/
+/incidents/
+/9may/
+/health/
+/newyear/
+/kinomusic/
+/games/
+/scitech/
+/
+/all/
+/api/v2/mobile/personalized/
+/api/v2/recommendations/
+/api/v2/redesign_more/
+/api/v2/personalized/
+/api/v2/mobile/
+/api/v2/index/head
+/api/v2/index/moscow_city
+/api/v2/index/kids
+/api/v2/index/politics
+/api/v2/index/auto
+/api/v2/index/business
+/api/v2/index/sport
+/api/v2/index/starlife
+/api/v2/index/science
+/api/v2/index/games
+/api/v2/index/scitech
+/api/v2/index/incidents
+/api/v2/index/lifestyle
+/api/v2/index/kinomusic
+/api/v2/index/health
+/api/v2/index/world
